@@ -23,6 +23,7 @@ jobs:
           github-token: ${{ github.token }}
           main-branch: main
           last-push-branch: last-push-to-main
+          author-file: authors.json
       
       - name: Output
         run: echo "${{ steps.recent-commits.outputs.message }}"
